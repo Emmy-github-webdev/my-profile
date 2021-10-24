@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
-/* Reset*/
+
+/* Reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,14 +21,14 @@ ul {
   text-decoration: none;
 }
 
-/* Basic style*/
+/* Basic style */
 body {
   background: #e5e5e5;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
-/* Fonts*/
+/* Fonts */
 h1,
 h3 {
   font-size: 1.2em;
@@ -36,6 +37,7 @@ h3 {
 h2 {
   font-size: 1.6em;
 }
+
 h4,
 h5 {
   font-size: 1.1em;
@@ -45,7 +47,7 @@ h5 {
   font-size: 1.1em;
 }
 
-/* Mobile styles*/
+/* Mobile styles */
 
 .navigation-bar {
   background: #fff;
@@ -81,7 +83,7 @@ h5 {
   border: 1px solid #acb7c3;
 }
 
-/* Wlecome section*/
+/* Wlecome section */
 .welcome {
   display: flex;
   height: 95vh;
@@ -136,50 +138,47 @@ h5 {
 .social-media ul {
   display: flex;
 }
-/* Small tablet*/
+
+/* Small tablet */
 @media screen and (min-width: 620px) {
   .nav-list .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-  
-   .menu {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+  .menu {
     display: none;
   }
 }
 
-/* Large tablet & Laptop*/
+/* Large tablet & Laptop */
 @media screen and (min-width: 960px) {
   body {
     font-size: 18px;
   }
-  
+
   .menu {
     display: none;
   }
-  
+
   .nav-list .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-  
-   .menu {
-    display: none;
+    display: inline-block;
+    padding: 20px 10px;
   }
 }
 
-/* Small tablet*/
+/* Small tablet */
 @media screen and (min-width: 1200px) {
-    body {
+  body {
     font-size: 20px;
   }
-  
+
   .nav-list .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-  
-   .menu {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+  .menu {
     display: none;
   }
 }
