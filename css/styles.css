@@ -47,14 +47,52 @@ h5 {
   font-size: 1.1em;
 }
 
+.see-button {
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 20vh;
+}
+
 .see-button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
 
+.tech span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  margin-right: 4vw;
+}
+
+.see-button span {
+  color: #396df2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 .see-button span:hover {
   color: #fff;
+}
+
+.tech span:nth-child(1),
+.tech span:nth-child(2),
+.tech span:nth-child(3) {
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 5px 6px;
 }
 
 .see-button:active {
@@ -149,6 +187,12 @@ h5 {
   padding-right: 3vw;
 }
 
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  margin: 2vh 0.1vw;
+}
+
 .social-media ul li img {
   width: 80%;
 }
@@ -173,12 +217,6 @@ h5 {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-}
-
-.portfolio-image img {
-  width: 100%;
-  height: auto;
-  margin: 2vh 0.1vw;
 }
 
 .portfolio-info h3 {
@@ -225,44 +263,6 @@ h5 {
 
 .tech {
   margin: 4.5vh 0;
-}
-
-.tech span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  margin-right: 4vw;
-}
-
-.tech span:nth-child(1),
-.tech span:nth-child(2),
-.tech span:nth-child(3) {
-  background: #ebebff;
-  border-radius: 8px;
-  padding: 5px 6px;
-}
-
-.see-button {
-  align-items: center;
-  padding: 12px;
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-  margin-top: 20vh;
-}
-
-.see-button span {
-  color: #396df2;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 /* Small tablet */
