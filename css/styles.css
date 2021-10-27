@@ -56,6 +56,20 @@ h5 {
   margin-top: 20vh;
 }
 
+.about-me-button {
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.about-me-button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
 .see-button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
@@ -72,7 +86,8 @@ h5 {
   margin-right: 4vw;
 }
 
-.see-button span {
+.see-button span,
+.about-me-button span {
   color: #396df2;
   align-items: center;
   text-align: center;
@@ -83,7 +98,8 @@ h5 {
   line-height: 24px;
 }
 
-.see-button span:hover {
+.see-button span:hover,
+.about-me-button span:hover {
   color: #fff;
 }
 
@@ -263,6 +279,110 @@ h5 {
 
 .tech {
   margin: 4.5vh 0;
+}
+
+/* about section */
+.about {
+  background: #fff;
+  border-top-right-radius: 90px;
+  margin-top: 15vh;
+  height: auto;
+}
+
+.about-content {
+  display: grid;
+  padding: 16px;
+  margin: 6vh 10vw;
+}
+
+.about-my-self {
+  margin-top: 10vh;
+}
+
+.about-my-self h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d; 
+  margin-right: 20%; 
+}
+
+.about-my-self p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 1vh 0;
+}
+
+.about-contact h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-bottom: 2vh;
+}
+
+.social-media-contact ul li {
+  list-style-type: none;
+  padding-right: 3vw;
+}
+
+.social-media-contact img {
+  height: auto;
+  margin: 0 0.1vw 2vh 0.1vw;
+}
+
+.social-media-contact ul li img {
+  width: 80%;
+}
+
+.social-media-contact ul {
+  display: flex;
+}
+
+.about-info {
+  margin: 6vh 0;
+}
+
+.languages,
+.framworks,
+.skills {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.languages img {
+  margin-left: 43%;
+}
+
+.framworks img {
+  margin-left: 41%;
+}
+
+.skills img {
+  margin-left: 66%;
+}
+
+.about-info li:nth-child(2),
+.about-info li:nth-child(3) {
+  content: "";
+  display: block;
+  width: 90%;
+  padding-top: 1vh;
+  margin-bottom: 2.5vh;
+  border-bottom: 1px solid #000;
 }
 
 /* Small tablet */
