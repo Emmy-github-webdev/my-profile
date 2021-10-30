@@ -223,7 +223,30 @@
      <section id="contact" class="contact">
       <div class="contact-content">
         <div class="contact-message">
-          
+          <h3>Contact me</h3>
+          <p>If you have an application you are interested in developing, 
+            a feature that you need built or a project that needs coding. 
+            I’d love to help with it 
+          </p>
+        </div>
+        <div class="contact-form">
+          <form onsubmit="return checkForm(this)" action="https://formspree.io/f/xwkaygyj" method="POST" id="formId">
+            <div class="form-contact-name form-group">
+              <label for="name"></label>
+              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" class="form-control"/>
+            </div>
+            <div class="form-contact-email form-group">
+              <label for="email"></label>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com" class="form-control"/>
+            </div>
+            <div class="form-contact-message form-group">
+              <label for="message"></label>
+              <textarea id="message" name="message" cols="30" rows="7" maxlength="500" class="form-control" placeholder="Write your message here"
+                required></textarea>
+            </div>
+            <span class="errorMessage" id="errorMessage"></span>
+            <button type="submit">Get It Touch</button>
+          </form>
         </div>
       </div>
     </section>
