@@ -181,7 +181,7 @@ h5 {
 
 .headline h1 {
   font-weight: bold;
-  font-size: 27px;
+  font-size: 28px;
   line-height: 45px;
   color: #172b4d;
   margin-bottom: 2vh;
@@ -255,7 +255,7 @@ h5 {
   padding: 16px;
   margin: 6vh 10vw;
   background: #fff;
-  height: 80vh;
+  height: auto;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
