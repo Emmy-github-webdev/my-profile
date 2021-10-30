@@ -177,19 +177,19 @@
             <div class="social-media-contact">
               <ul>
                 <li>
-                  <a href="#"><img src="/images/mobile/Linkedin-icon.svg" alt="linkedin-icon"></a>
+                  <a href="#"><img src="images/mobile/Linkedin-icon.svg" alt="linkedin-icon"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="/images/mobile/twitter.svg" alt="twitter-icon"></a>
+                  <a href="#"><img src="images/mobile/twitter.svg" alt="twitter-icon"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="/images/mobile/github.svg" alt="github-icon"></a>
+                  <a href="#"><img src="images/mobile/github.svg" alt="github-icon"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="/images/mobile/finger.svg" alt="finger-icon"></a>
+                  <a href="#"><img src="images/mobile/finger.svg" alt="finger-icon"></a>
                 </li>
                 <li>
-                  <a href="#"><img src="/images/mobile/m.svg" alt="m-icon"></a>
+                  <a href="#"><img src="images/mobile/m.svg" alt="m-icon"></a>
                 </li>
               </ul>
             </div>
@@ -202,26 +202,52 @@
         <div class="about-info">
           <ul>
             <li class="languages">
-              Languages <img src="/images/mobile/dropdown-Icon.png" alt="language-dropdown">
-              <!-- <div>
-                <span>javascript</span>
-                <span>HTML</span>
-                <span>CSS</span>
-              </div> -->
+              <h4>Languages <img src="images/mobile/dropdown-Icon.png" alt="language-dropdown"></h4>  
+              <div>
+                <span><h5>javascript</h5></span>
+                <span><h5>HTML</h5></span>
+                <span><h5>CSS</h5></span>
+              </div>
             </li>
             <li class="framworks">
-              Frameworks <img src="/images/mobile/Icon-Right-Larger.svg" alt="framework-next">
+              Frameworks <img src="images/mobile/Icon-Right-Larger.svg" alt="framework-next">
             </li>
             <li class="skills">
-              Skills <img src="/images/mobile/Icon-Right-Larger.svg" alt="skill-next">
+              Skills <img src="images/mobile/Icon-Right-Larger.svg" alt="skill-next">
             </li>
           </ul>
         </div>
       </div>
     </section>
-    
      <section id="contact" class="contact">
-      
+      <div class="contact-content">
+        <div class="contact-message">
+          <h3>Contact me</h3>
+          <p>If you have an application you are interested in developing, 
+            a feature that you need built or a project that needs coding. 
+            I’d love to help with it 
+          </p>
+        </div>
+        <div class="contact-form">
+          <form onsubmit="return checkForm(this)" action="https://formspree.io/f/xwkaygyj" method="POST" id="formId">
+            <div class="form-contact-name form-group">
+              <label for="name"></label>
+              <input id="name" type="text" name="name" required maxlength="30" placeholder="Name" class="form-control"/>
+            </div>
+            <div class="form-contact-email form-group">
+              <label for="email"></label>
+              <input id="email" type="email" name="email" required placeholder="example@gmail.com" class="form-control"/>
+            </div>
+            <div class="form-contact-message form-group">
+              <label for="message"></label>
+              <textarea id="message" name="message" cols="30" rows="7" maxlength="500" class="form-control" placeholder="Write your message here"
+                required></textarea>
+            </div>
+            <span class="errorMessage" id="errorMessage"></span>
+            <button type="submit">Get It Touch</button>
+          </form>
+        </div>
+      </div>
     </section>
 </body>
 </html>
