@@ -505,13 +505,84 @@ form::after {
 }
 
 /* Small tablet */
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 768px) {
   .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
   }
 
   .menu {
+    display: none;
+  }
+
+  .welcome {
+    background-image: url(../images/desktop/welcome-backgroung-img.png);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 90px;
+    background-size: contain;
+  }
+
+  .headline {
+    margin: 22vh 17vw 18.7vh 15vw;
+  }
+
+  .headline h1 {
+    font-size: 35px;
+  }
+
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+    
+  }
+ .about-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 3vw;
+ }
+
+ .languages .languages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    height: auto;
+  }
+
+  .languages span h5 {
+    margin-top: 6.7vh;
+    width: auto;
+    font-size: 10px;
+  }
+
+  .languages {
+    margin: 15vh 0;
+  }
+
+  .contact {
+    background-image: url(../images/desktop/desktop-contact-background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact-content {
+    margin: 20vh 16vw 6vh 16vw;
+  }
+
+  .contact-message h3 {
+    font-size: 40px;
+    margin-left: 23%;
+  }
+
+  .form-control {
+    font-size: 15px;
+  }
+
+  form button {
+    margin-left: 40%;
+  }
+
+  form::after {
     display: none;
   }
 }
