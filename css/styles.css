@@ -167,7 +167,7 @@ h5 {
 /* Wlecome section */
 .welcome {
   display: flex;
-  height: 95vh;
+  height: auto;
   background: #fff;
   background-image: url('../images/mobile/header-shapes.png');
   background-repeat: no-repeat;
@@ -176,12 +176,12 @@ h5 {
 }
 
 .headline {
-  margin: 18vh 16.5vw 18.7vh 10vw;
+  margin: 15vh 15vw 18.7vh 10vw;
 }
 
 .headline h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 2vh;
