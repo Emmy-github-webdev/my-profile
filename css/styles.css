@@ -223,7 +223,7 @@ h5 {
 }
 
 .skills img {
-  margin-left: 66%;
+  margin-left: 69%;
 }
 
 .social-media ul li img {
@@ -372,7 +372,11 @@ h5 {
   margin: 6vh 0;
 }
 
-.languages,
+.languages {
+  list-style-type: none;
+}
+
+.languages h4,
 .framworks,
 .skills {
   list-style-type: none;
@@ -383,6 +387,38 @@ h5 {
   display: flex;
   align-items: center;
   color: #000;
+}
+
+.languages span {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+  background: #f7f7f9;
+  border-radius: 8px;
+  height: 66.72px;
+}
+
+.languages span h5 {
+  text-align: center;
+  padding: 3vh 0;
+}
+
+.languages span:nth-child(1) {
+  background-image: url(../images/mobile/js.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
+}
+
+.languages span:nth-child(2) {
+  background-image: url(../images/mobile/htm.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
+}
+
+.languages span:nth-child(3) {
+  background-image: url(../images/mobile/cs.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
 }
 
 /* Small tablet */
