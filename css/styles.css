@@ -209,6 +209,23 @@ h5 {
   margin: 2vh 0.1vw;
 }
 
+.social-media-contact img {
+  height: auto;
+  margin: 0 0.1vw 2vh 0.1vw;
+}
+
+.languages img {
+  margin-left: 43%;
+}
+
+.framworks img {
+  margin-left: 41%;
+}
+
+.skills img {
+  margin-left: 66%;
+}
+
 .social-media ul li img {
   width: 80%;
 }
@@ -247,10 +264,6 @@ h5 {
   margin: 2vh 0;
 }
 
-.portifolio-role ul {
-  display: flex;
-}
-
 .portifolio-role ul li {
   list-style-type: none;
   padding-right: 3.7vw;
@@ -258,6 +271,25 @@ h5 {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+}
+
+.social-media-contact ul li {
+  list-style-type: none;
+  padding-right: 3vw;
+}
+
+.about-info li:nth-child(2),
+.about-info li:nth-child(3) {
+  content: "";
+  display: block;
+  width: 90%;
+  padding-top: 1vh;
+  margin-bottom: 2.5vh;
+  border-bottom: 1px solid #000;
+}
+
+.portifolio-role ul {
+  display: flex;
 }
 
 .portifolio-role ul li:nth-child(1) {
@@ -306,8 +338,8 @@ h5 {
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172b4d; 
-  margin-right: 20%; 
+  color: #172b4d;
+  margin-right: 20%;
 }
 
 .about-my-self p {
@@ -326,16 +358,6 @@ h5 {
   line-height: 24px;
   color: #7f8cff;
   margin-bottom: 2vh;
-}
-
-.social-media-contact ul li {
-  list-style-type: none;
-  padding-right: 3vw;
-}
-
-.social-media-contact img {
-  height: auto;
-  margin: 0 0.1vw 2vh 0.1vw;
 }
 
 .social-media-contact ul li img {
@@ -361,28 +383,6 @@ h5 {
   display: flex;
   align-items: center;
   color: #000;
-}
-
-.languages img {
-  margin-left: 43%;
-}
-
-.framworks img {
-  margin-left: 41%;
-}
-
-.skills img {
-  margin-left: 66%;
-}
-
-.about-info li:nth-child(2),
-.about-info li:nth-child(3) {
-  content: "";
-  display: block;
-  width: 90%;
-  padding-top: 1vh;
-  margin-bottom: 2.5vh;
-  border-bottom: 1px solid #000;
 }
 
 /* Small tablet */
