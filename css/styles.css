@@ -228,11 +228,11 @@ h5 {
 }
 
 .framworks img {
-  margin-left: 41%;
+  margin-left: 90%;
 }
 
 .skills img {
-  margin-left: 69%;
+  margin-left: 90%;
 }
 
 .social-media ul li img {
@@ -444,7 +444,7 @@ h5 {
 .contact-message h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 43px;
+  font-size: 35px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -458,7 +458,7 @@ h5 {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  text-align: left;
+  text-align: justify;
   color: #ebebff;
   margin: 0 2vw;
 }
