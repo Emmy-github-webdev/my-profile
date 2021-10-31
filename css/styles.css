@@ -520,7 +520,7 @@ form::after {
     background-repeat: no-repeat;
     border-bottom-left-radius: 90px;
     background-size: contain;
-    height: 100vh;
+    height: 100%;
   }
 
   .headline {
@@ -603,7 +603,7 @@ form::after {
   }
 
   .welcome {
-    height: 100vh;
+    height: 100%;
   }
 
   .nav-list .list-item {
@@ -648,7 +648,7 @@ form::after {
   }
 
   .welcome {
-    height: 100vh;
+    height: 100%;
   }
 
   .headline {
