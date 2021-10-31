@@ -520,6 +520,7 @@ form::after {
     background-repeat: no-repeat;
     border-bottom-left-radius: 90px;
     background-size: contain;
+    height: 100vh;
   }
 
   .headline {
@@ -601,6 +602,10 @@ form::after {
     display: none;
   }
 
+  .welcome {
+    height: 100vh;
+  }
+
   .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
@@ -640,6 +645,10 @@ form::after {
 
   .menu {
     display: none;
+  }
+
+  .welcome {
+    height: 100vh;
   }
 
   .headline {
