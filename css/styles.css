@@ -64,12 +64,6 @@ h5 {
   border-radius: 8px;
 }
 
-form button:hover {
-  background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  border-radius: 8px;
-}
-
 .about-me-button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
@@ -124,10 +118,6 @@ form button:hover {
   background: #ebebff;
   border-radius: 8px;
   padding: 5px 6px;
-}
-
-form button:active {
-  background: #fff;
 }
 
 .see-button:active {
