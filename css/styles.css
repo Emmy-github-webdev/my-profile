@@ -167,7 +167,7 @@ h5 {
 /* Wlecome section */
 .welcome {
   display: flex;
-  height: 95vh;
+  height: auto;
   background: #fff;
   background-image: url('../images/mobile/header-shapes.png');
   background-repeat: no-repeat;
@@ -176,13 +176,13 @@ h5 {
 }
 
 .headline {
-  margin: 18vh 16.5vw 18.7vh 10vw;
+  margin: 15vh 15vw 18.7vh 10vw;
 }
 
 .headline h1 {
   font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 28px;
+  line-height: 45px;
   color: #172b4d;
   margin-bottom: 2vh;
 }
@@ -228,11 +228,11 @@ h5 {
 }
 
 .framworks img {
-  margin-left: 41%;
+  margin-left: 90%;
 }
 
 .skills img {
-  margin-left: 69%;
+  margin-left: 90%;
 }
 
 .social-media ul li img {
@@ -255,7 +255,7 @@ h5 {
   padding: 16px;
   margin: 6vh 10vw;
   background: #fff;
-  height: 80vh;
+  height: auto;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -444,7 +444,7 @@ h5 {
 .contact-message h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 43px;
+  font-size: 35px;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -458,7 +458,7 @@ h5 {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  text-align: left;
+  text-align: justify;
   color: #ebebff;
   margin: 0 2vw;
 }
@@ -505,7 +505,7 @@ form::after {
 }
 
 /* Small tablet */
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 768px) {
   .nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
@@ -513,6 +513,81 @@ form::after {
 
   .menu {
     display: none;
+  }
+
+  .welcome {
+    background-image: url(../images/desktop/welcome-backgroung-img.png);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 90px;
+    background-size: contain;
+  }
+
+  .headline {
+    margin: 22vh 17vw 18.7vh 15vw;
+  }
+
+  .headline h1 {
+    font-size: 35px;
+  }
+
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .languages .languages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    height: auto;
+  }
+
+  .languages span h5 {
+    margin-top: 6.7vh;
+    width: auto;
+    font-size: 10px;
+  }
+
+  .languages {
+    margin: 15vh 0;
+  }
+
+  .contact {
+    background-image: url(../images/desktop/desktop-contact-background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contact-content {
+    margin: 20vh 16vw 6vh 16vw;
+  }
+
+  .contact-message h3 {
+    font-size: 40px;
+    margin-left: 23%;
+  }
+
+  .form-control {
+    font-size: 15px;
+  }
+
+  form button {
+    margin-left: 40%;
+  }
+
+  form::after {
+    display: none;
+  }
+
+  form button[type=submit] {
+    font-size: 19px;
   }
 }
 
@@ -530,6 +605,26 @@ form::after {
     display: inline-block;
     padding: 20px 10px;
   }
+
+  .headline {
+    margin: 25vh 20vw 18.7vh 19vw;
+  }
+
+  .headline h1 {
+    font-size: 40px;
+  }
+
+  .headline p {
+    font-size: 19px;
+  }
+
+  .social-media-contact h2 {
+    font-size: 18px;
+  }
+
+  .about-content {
+    margin: 12vh 13vw 6vh 13vw;
+  }
 }
 
 /* Small tablet */
@@ -545,5 +640,80 @@ form::after {
 
   .menu {
     display: none;
+  }
+
+  .headline {
+    margin: 27vh 24vw 18.7vh 19vw;
+  }
+
+  .headline h1 {
+    font-size: 43px;
+  }
+
+  .headline p {
+    font-size: 21px;
+  }
+
+  .social-media-contact h2 {
+    font-size: 22px;
+  }
+
+  .portfolio-info h3 {
+    font-size: 41px;
+  }
+
+  .portifolio-role ul li {
+    font-size: 23px;
+  }
+
+  .portfolio-info p {
+    font-size: 21px;
+  }
+
+  .tech span {
+    font-size: 22px;
+  }
+
+  .see-button span {
+    font-size: 20px;
+  }
+
+  .about-content {
+    margin: 15vh 15vw 6vh 15vw;
+  }
+
+  .about-my-self h3 {
+    font-size: 50px;
+  }
+
+  .about-my-self p {
+    font-size: 21px;
+  }
+
+  .languages span {
+    height: 77.72px;
+  }
+
+  .languages span h5 {
+    padding: 2vh 0;
+    font-size: 20px;
+  }
+
+  .contact-content {
+    margin: 20vh 20vw 6vh 20vw;
+  }
+
+  .contact-message h3 {
+    font-size: 50px;
+    margin-left: 30%;
+  }
+
+  .contact-message p {
+    font-size: 25px;
+  }
+
+  .form-control {
+    padding: 20px 30px;
+    margin: 13px 0;
   }
 }
