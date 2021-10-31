@@ -512,6 +512,7 @@ form::after {
     height: 100%;
     background-color: #6070ff;
     background-color: #6070ffe6;
+
     /* background: rgba(0,0,255,0.8); */
     display: flex;
     flex-direction: column;
@@ -523,13 +524,13 @@ form::after {
     filter: blur(0.4px);
     transition: transform 0.2s ease-out, opacity 0.2s ease-out;
   }
-  
+
   .fsnav-open {
     visibility: visible;
     transform: scale(1);
     opacity: 1;
   }
-  
+
   .fsnav-close {
     position: absolute;
     top: 15px;
@@ -546,15 +547,7 @@ form::after {
     cursor: pointer;
     transition: background 0.1s;
   }
-  
-  .fsnav-close:active,
-  .fsnav-close:hover,
-  .fsnav-link:active,
-  .fsnav-link:hover {
-    background: rgba(255,255,255,0.1);
-    -webkit-tap-highlight-color: transparent;
-  }
-  
+
   .fsnav-link {
     line-height: 2;
     text-decoration: none;
@@ -562,6 +555,14 @@ form::after {
     font-size: 25px;
     padding: 0 20px;
     transition: background 0.1s;
+  }
+
+  .fsnav-close:active,
+  .fsnav-close:hover,
+  .fsnav-link:active,
+  .fsnav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -575,6 +576,7 @@ form::after {
   .menu {
     display: none;
   }
+
   .fsnav-close {
     display: none;
   }
