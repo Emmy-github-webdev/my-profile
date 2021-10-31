@@ -534,15 +534,15 @@ form::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3vw;
-    
   }
- .about-content {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 3vw;
- }
 
- .languages .languages-list {
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3vw;
+  }
+
+  .languages .languages-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3vw;
@@ -585,6 +585,10 @@ form::after {
   form::after {
     display: none;
   }
+
+  form button[type=submit] {
+    font-size: 19px;
+  }
 }
 
 /* Large tablet & Laptop */
@@ -601,6 +605,26 @@ form::after {
     display: inline-block;
     padding: 20px 10px;
   }
+
+  .headline {
+    margin: 25vh 20vw 18.7vh 19vw;
+  }
+
+  .headline h1 {
+    font-size: 40px;
+  }
+
+  .headline p {
+    font-size: 19px;
+  }
+
+  .social-media-contact h2 {
+    font-size: 18px;
+  }
+
+  .about-content {
+    margin: 12vh 13vw 6vh 13vw;
+  }
 }
 
 /* Small tablet */
@@ -616,5 +640,80 @@ form::after {
 
   .menu {
     display: none;
+  }
+
+  .headline {
+    margin: 27vh 24vw 18.7vh 19vw;
+  }
+
+  .headline h1 {
+    font-size: 43px;
+  }
+
+  .headline p {
+    font-size: 21px;
+  }
+
+  .social-media-contact h2 {
+    font-size: 22px;
+  }
+
+  .portfolio-info h3 {
+    font-size: 41px;
+  }
+
+  .portifolio-role ul li {
+    font-size: 23px;
+  }
+
+  .portfolio-info p {
+    font-size: 21px;
+  }
+
+  .tech span {
+    font-size: 22px;
+  }
+
+  .see-button span {
+    font-size: 20px;
+  }
+
+  .about-content {
+    margin: 15vh 15vw 6vh 15vw;
+  }
+
+  .about-my-self h3 {
+    font-size: 50px;
+  }
+
+  .about-my-self p {
+    font-size: 21px;
+  }
+
+  .languages span {
+    height: 77.72px;
+  }
+
+  .languages span h5 {
+    padding: 2vh 0;
+    font-size: 20px;
+  }
+
+  .contact-content {
+    margin: 20vh 20vw 6vh 20vw;
+  }
+
+  .contact-message h3 {
+    font-size: 50px;
+    margin-left: 30%;
+  }
+
+  .contact-message p {
+    font-size: 25px;
+  }
+
+  .form-control {
+    padding: 20px 30px;
+    margin: 13px 0;
   }
 }
