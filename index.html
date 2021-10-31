@@ -4,21 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRE1ZD588G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CRE1ZD588G');
+  </script>
   <link rel="stylesheet" href="css/styles.css">
   <title>Emmanuel- A Full Stack Web Developer</title>
 </head>
 <body>
     <header class="navigation-bar">
       <div class="logo">
-        <a href="#">Emmanuel</a>
+        <a href="/">Emmanuel</a>
       </div>
       <nav>
-        <!-- <ul class="nav-list">
-          <li class="list-item" id="#portfolio">Portfolio</li>
-          <li class="list-item" id="#about">About</li>
-          <li class="list-item" id="#contact">Contact</li>
-        </ul> -->
-        <div class="menu">
+        <div class="fsnav">
+          <button type="button" class="fsnav-close">&times;</button>
+          <a href="#" class="fsnav-link" id="portfolio">Portfolio</a>
+          <a href="#" class="fsnav-link" id="about">About</a>
+          <a href="#" class="fsnav-link" id="contact">Contact</a>
+        </div>
+        <div class="menu" onclick="openNav()">
           <div class="menu-line"></div>
           <div class="menu-line"></div>
           <div class="menu-line"></div>
@@ -249,5 +257,6 @@
         </div>
       </div>
     </section>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
