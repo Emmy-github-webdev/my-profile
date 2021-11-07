@@ -19,19 +19,19 @@
       <div class="logo">
         <a href="/">Emmanuel</a>
       </div>
-      <nav>
-        <div class="fsnav">
-          <button type="button" class="fsnav-close">&times;</button>
-          <a href="#" class="fsnav-link" id="portfolio">Portfolio</a>
-          <a href="#" class="fsnav-link" id="about">About</a>
-          <a href="#" class="fsnav-link" id="contact">Contact</a>
-        </div>
-        <div class="menu" onclick="openNav()">
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-        </div>
+      <nav id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close-btn">&times;</a>
+        <ul class="overlay-content">
+          <li class="nav-item1 nav-list"><a href="#portfolio">Portfolio</a></li>
+          <li class="nav-item2 nav-list"><a href="#about">About</a></li>
+          <li class="nav-item3 nav-list"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
+      <div class="menu" onclick="openNav()" id="click-image">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
     </header>
     
     <section id="welcom" class="welcome">
@@ -72,107 +72,7 @@
     </section>
     
      <section id="portfolio" class="portfolio">
-      <div class="portfolio-card">
-        <div class="portfolio-image">
-          <img src="images/mobile/portfolio1.png" alt="portfolio one">
-        </div>
-        <div class="portfolio-info">
-          <h3>Tonic</h3>
-          <div class="portifolio-role">
-            <ul>
-              <li>Canopy</li>
-              <li>Full Stack Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <div class="tech">
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-          <a href="#" class="see-button">
-            <span>See Project</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="portfolio-image">
-          <img src="images/mobile/portfolio2.svg" alt="portfolio two">
-        </div>
-        <div class="portfolio-info">
-          <h3>Multi-Post
-            Stories</h3>
-          <div class="portifolio-role">
-            <ul>
-              <li>Canopy</li>
-              <li>Full Stack Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <div class="tech">
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-          <a href="#" class="see-button">
-            <span>See Project</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="portfolio-image">
-          <img src="images/mobile/portfolio3.svg" alt="portfolio three">
-        </div>
-        <div class="portfolio-info">
-          <h3>Tonic</h3>
-          <div class="portifolio-role">
-            <ul>
-              <li>Canopy</li>
-              <li>Full Stack Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <div class="tech">
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-          <a href="#" class="see-button">
-            <span>See Project</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="portfolio-image">
-          <img src="images/mobile/portfolio4.svg" alt="portfolio four">
-        </div>
-        <div class="portfolio-info">
-          <h3>Multi-Post
-            Stories</h3>
-          <div class="portifolio-role">
-            <ul>
-              <li>Canopy</li>
-              <li>Full Stack Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-          <div class="tech">
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-          <a href="#" class="see-button">
-            <span>See Project</span>
-          </a>
-        </div>
-      </div>
+      
     </section>
     
      <section id="about" class="about">
