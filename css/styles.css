@@ -109,7 +109,7 @@ h5 {
   line-height: 24px;
 }
 
-.languages span {
+.languages li {
   display: flex;
   flex-direction: column;
   margin: 1vh 0;
@@ -288,8 +288,8 @@ h5 {
   padding-right: 3vw;
 }
 
-.about-info li:nth-child(2),
-.about-info li:nth-child(3) {
+.about-info .framworks,
+.about-info .skills {
   content: "";
   display: block;
   width: 90%;
@@ -400,24 +400,24 @@ h5 {
   color: #000;
 }
 
-.languages span h5 {
+.languages-list li {
   text-align: center;
   padding: 3vh 0;
 }
 
-.languages span:nth-child(1) {
+.languages li:nth-child(1) {
   background-image: url(../images/mobile/js.svg);
   background-repeat: no-repeat;
   background-position: top 4px left 6px;
 }
 
-.languages span:nth-child(2) {
+.languages li:nth-child(2) {
   background-image: url(../images/mobile/htm.svg);
   background-repeat: no-repeat;
   background-position: top 4px left 6px;
 }
 
-.languages span:nth-child(3) {
+.languages li:nth-child(3) {
   background-image: url(../images/mobile/cs.svg);
   background-repeat: no-repeat;
   background-position: top 4px left 6px;
@@ -823,10 +823,10 @@ form::after {
     height: auto;
   }
 
-  .languages span h5 {
-    margin-top: 6.7vh;
+  .languages li h5 {
+    margin-top: 2.7vh;
     width: auto;
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .languages {
@@ -999,11 +999,11 @@ form::after {
     font-size: 21px;
   }
 
-  .languages span {
+  .languages li {
     height: 77.72px;
   }
 
-  .languages span h5 {
+  .languages li h5 {
     padding: 2vh 0;
     font-size: 20px;
   }
