@@ -56,7 +56,6 @@ h5 {
   height: 75px;
 }
 
-
 .see-button {
   align-items: center;
   padding: 12px;
@@ -116,6 +115,21 @@ h5 {
   background: #f7f7f9;
   border-radius: 8px;
   height: 66.72px;
+}
+
+.inner-popup-div span {
+  margin-left: 3vw;
+  font-size: 15px;
+}
+
+.tech-popup span {
+  color: #6070ff;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 5px 10px;
 }
 
 .see-button span:hover,
@@ -207,6 +221,11 @@ h5 {
   line-height: 24px;
 }
 
+.languages-list li {
+  text-align: center;
+  padding: 3vh 0;
+}
+
 .social-media ul li {
   list-style-type: none;
   padding-right: 3vw;
@@ -234,6 +253,10 @@ h5 {
 
 .skills img {
   margin-left: 90%;
+}
+
+.inner-popup-div img {
+  padding: 1.5vh 3vw;
 }
 
 .social-media ul li img {
@@ -288,6 +311,19 @@ h5 {
   padding-right: 3vw;
 }
 
+.languages h4,
+.framworks,
+.skills {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
 .about-info .framworks,
 .about-info .skills {
   content: "";
@@ -296,6 +332,24 @@ h5 {
   padding-top: 1vh;
   margin-bottom: 2.5vh;
   border-bottom: 1px solid #000;
+}
+
+.languages li:nth-child(1) {
+  background-image: url(../images/mobile/js.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
+}
+
+.languages li:nth-child(2) {
+  background-image: url(../images/mobile/htm.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
+}
+
+.languages li:nth-child(3) {
+  background-image: url(../images/mobile/cs.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 6px;
 }
 
 .portifolio-role ul {
@@ -385,42 +439,6 @@ h5 {
 
 .languages {
   list-style-type: none;
-}
-
-.languages h4,
-.framworks,
-.skills {
-  list-style-type: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #000;
-}
-
-.languages-list li {
-  text-align: center;
-  padding: 3vh 0;
-}
-
-.languages li:nth-child(1) {
-  background-image: url(../images/mobile/js.svg);
-  background-repeat: no-repeat;
-  background-position: top 4px left 6px;
-}
-
-.languages li:nth-child(2) {
-  background-image: url(../images/mobile/htm.svg);
-  background-repeat: no-repeat;
-  background-position: top 4px left 6px;
-}
-
-.languages li:nth-child(3) {
-  background-image: url(../images/mobile/cs.svg);
-  background-repeat: no-repeat;
-  background-position: top 4px left 6px;
 }
 
 .contact {
@@ -534,10 +552,6 @@ form::after {
   flex-direction: column;
 }
 
-.inner-popup-div img {
-  padding: 1.5vh 3vw;
-}
-
 .inner-popup-div h3 {
   color: #172b4d;
   font-style: normal;
@@ -546,12 +560,6 @@ form::after {
   line-height: 44px;
   margin-bottom: 1vh;
   padding: 0.5vh 3vw;
-}
-
-.inner-popup-div span {
-  margin-left: 3vw;
-  font-size: 15px;
-  
 }
 
 .inner-popup-div span:nth-child(1) {
@@ -579,18 +587,6 @@ form::after {
   font-size: 25px;
   margin-left: 90%;
   cursor: pointer;
-}
-
-
-.tech-popup span {
-  /* padding-left: 4px; */
-  color: #6070ff;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  background: #ebebff;
-  border-radius: 8px;
-  padding: 5px 10px;
 }
 
 .tech-popup span:nth-child(1) {
@@ -632,8 +628,7 @@ form::after {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
-} 
-
+}
 
 .popup-see-proj-btn {
   display: flex;
@@ -669,7 +664,6 @@ form::after {
 }
 
 @media all  and (max-width: 767px) {
-    
   .overlay {
     height: 100%;
     width: 0;
@@ -716,7 +710,6 @@ form::after {
 
 /* Small tablet */
 @media screen and (min-width: 768px) {
-
   .overlay {
     max-height: 20%;
   }
@@ -778,16 +771,17 @@ form::after {
     display: none;
   }
 
-  .closebtn{
+  .closebtn {
     display: none;
   }
 
-  nav .nav-list{
+  nav .nav-list {
     display: inline-block;
     padding: 20px 5px;
     font-size: 20px;
     color: #344563;
   }
+
   .welcome {
     background-image: url(../images/desktop/welcome-backgroung-img.png);
     background-repeat: no-repeat;
@@ -864,7 +858,7 @@ form::after {
     font-size: 19px;
   }
 
-  
+
   /* Windows pop up */
   .inner-popup-div h3 {
     font-size: 40px;
@@ -878,13 +872,11 @@ form::after {
     text-align: justify;
   }
 
-  
-.see-project button {
-  padding: 12px 25px;
-  margin-left: 10%;
-  font-size: 17px;
-  
-}
+  .see-project button {
+    padding: 12px 25px;
+    margin-left: 10%;
+    font-size: 17px;
+  }
 }
 
 /* Large tablet & Laptop */
@@ -925,6 +917,7 @@ form::after {
   .about-content {
     margin: 12vh 13vw 6vh 13vw;
   }
+
   .modal-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -971,6 +964,10 @@ form::after {
     font-size: 41px;
   }
 
+  .languages li {
+    height: 77.72px;
+  }
+
   .portifolio-role ul li {
     font-size: 23px;
   }
@@ -997,10 +994,6 @@ form::after {
 
   .about-my-self p {
     font-size: 21px;
-  }
-
-  .languages li {
-    height: 77.72px;
   }
 
   .languages li h5 {

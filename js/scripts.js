@@ -1,3 +1,57 @@
+/* eslint-disable no-unused-vars */
+/* Form validation */
+const formName = document.getElementById('name');
+const email = document.getElementById('email');
+const form = document.getElementById('formId');
+
+function checkForm(form) {
+  const error = document.getElementById('errorMessage');
+
+  if (email.value === email.value.toLowerCase()) {
+    return true;
+  }
+
+  email.style.border = '1px solid red';
+  email.style.boxShadow = '0 0 5pt 1pt #ffb3b3';
+
+  error.innerHTML = 'Email must be lowercase!';
+  error.style.display = 'block';
+  error.style.color = '#ff0000';
+
+  form.email.focus();
+  return false;
+}
+
+/* localStorage */
+
+const formData = [];
+
+function UserData(name, email) {
+  this.name = name;
+  this.email = email;
+}
+
+function setLocalStorage() {
+  localStorage.setItem('data', JSON.stringify(formData));
+}
+
+function getFormDetail() {
+  const newUser = new UserData(formName.value, email.value);
+  formData.push(newUser);
+  setLocalStorage();
+}
+form.addEventListener('submit', getFormDetail);
+
+function getDataFromLocalStorage() {
+  const dataFromLocalStorage = JSON.parse(localStorage.getItem('data'));
+  if (dataFromLocalStorage) {
+    dataFromLocalStorage.forEach((data) => {
+      formName.value = data.name;
+      email.value = data.email;
+    });
+  }
+}
+
 /* mobile full screen overlay */
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
@@ -23,7 +77,6 @@ for (let index = 0; index < hamItem.length; index += 1) {
     closeNav();
   });
 }
-
 
 /* projects items */
 const portfolioSection = document.querySelector('.portfolio');
@@ -113,14 +166,14 @@ function createProject() {
     const portFolioRoleDiv = document.createElement('div');
     portFolioRoleDiv.className = 'portifolio-role';
     const ul = document.createElement('ul');
-    for (let i = 0; i < project.frame.length; i++){
+    for (let i = 0; i < project.frame.length; i += 1) {
       const li = document.createElement('li');
       li.textContent = project.frame[i];
       ul.appendChild(li);
     }
     const techDiv = document.createElement('div');
-    techDiv.className = "tech";
-    for (let j = 0; j < project.technologies.length; j++){
+    techDiv.className = 'tech';
+    for (let j = 0; j < project.technologies.length; j += 1) {
       const techDivSpan = document.createElement('span');
       techDivSpan.textContent = project.technologies[j];
       techDiv.appendChild(techDivSpan);
@@ -155,7 +208,7 @@ function createProject() {
       innerPopUpDiv.appendChild(innerPopUpDivh3);
       const cardFrameDiv = document.createElement('div');
       cardFrameDiv.className = 'card-frame';
-      for (let m = 0; m < project.frame.length; m++){
+      for (let m = 0; m < project.frame.length; m += 1) {
         const cardFrameDivSpan = document.createElement('span');
         cardFrameDivSpan.textContent = project.frame[m];
         cardFrameDiv.appendChild(cardFrameDivSpan);
@@ -173,7 +226,7 @@ function createProject() {
       modalInfoDivAction.className = 'modal-info-action';
       const techPopUpDiv = document.createElement('div');
       techPopUpDiv.className = 'tech-popup';
-      for (let n = 0; n < project.technologies.length; n++){
+      for (let n = 0; n < project.technologies.length; n += 1) {
         const techPopUpDivSpan = document.createElement('span');
         techPopUpDivSpan.textContent = project.technologies[n];
         techPopUpDiv.appendChild(techPopUpDivSpan);
@@ -192,7 +245,7 @@ function createProject() {
       seeProjectPopupA.appendChild(seeProjectLive);
       seeProjectPopupA.appendChild(seeProjectSource);
       modalInfoDivAction.appendChild(seeProjectPopupA);
-      modalInfoDiv.appendChild(modalInfoDivAction)
+      modalInfoDiv.appendChild(modalInfoDivAction);
       innerPopUpDiv.appendChild(modalInfoDiv);
       popUpParentDiv.appendChild(innerPopUpDiv);
       document.body.appendChild(popUpParentDiv);
@@ -200,8 +253,8 @@ function createProject() {
       closeDiv.addEventListener('click', () => {
         popUpParentDiv.style.display = 'none';
       });
-    })
-  })
+    });
+  });
 }
 
 createProject();
