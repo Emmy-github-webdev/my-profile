@@ -5,6 +5,10 @@ Portfolio is a project that showcases my experience and ability to the world!
 
 If you like what you see and have a project you need coded, don't hesitate to contact me.
 
+# Responsiveness
+
+![My Profile Responsiveness](images/my-profile-img.PNG)
+
 # Built With
 
 
@@ -15,7 +19,7 @@ If you like what you see and have a project you need coded, don't hesitate to co
 
 # Live Demo
 
-[Live Demo Link](https://github.com/emmy-github-webdev/my-profile).
+[Live Demo Link](https://emmy-github-webdev.github.io/my-profile/).
 
 # Getting Started
 
@@ -38,9 +42,9 @@ To get a local copy up and running follow these simple example steps.
 - Navigate to page in the prject settings and publish
 # Authors
 
-- GitHub: [@githubhandle](https://github.com/Emmy-github-webdev).
-- Twitter: [@twitterhandle](@ogaemmanueloga).
-- LinkedIn: [Linkedin](https://github.com/Emmy-github-webdev/lint-test).
+- GitHub: [GitHub](https://github.com/Emmy-github-webdev).
+- Twitter: [Twitter](https://twitter.com/OgaemmanuelOga).
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/emmanuel-oga-16171584/).
 
 # Contributing
 
