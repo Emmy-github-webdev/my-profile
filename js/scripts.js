@@ -83,18 +83,18 @@ const portfolioSection = document.querySelector('.portfolio');
 const projects = [
   {
     id: 1,
-    featuredImage: 'images/mobile/portfolio1.png',
-    name: 'Tonic',
+    featuredImage: 'images/synergy-image.png',
+    name: 'Synergy Industries',
     frame: [
-      'CANOPY', 'Back End Dev', '2015',
+      'Investment', '• Full-Stack Dev', '• 2021',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
       'HTML', 'CSS', 'Javascript',
     ],
     year: 2015,
-    liveDemo: '#',
-    sourceDemo: '#',
+    liveDemo: 'https://objective-kare-8355a6.netlify.app/',
+    sourceDemo: 'https://github.com/Emmy-github-webdev/investment_project',
   },
 
   {
@@ -102,7 +102,7 @@ const projects = [
     featuredImage: 'images/mobile/portfolio2.svg',
     name: 'Multi-Post Stories',
     frame: [
-      'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', '• Back End Dev', '• 2015',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
@@ -118,7 +118,7 @@ const projects = [
     featuredImage: 'images/mobile/portfolio3.svg',
     name: 'Tonic',
     frame: [
-      'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', '• Back End Dev', '• 2015',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
@@ -134,7 +134,7 @@ const projects = [
     featuredImage: 'images/mobile/portfolio4.svg',
     name: 'Multi-Post Stories',
     frame: [
-      'CANOPY', 'Back End Dev', '2015',
+      'CANOPY', '• Back End Dev', '• 2015',
     ],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: [
@@ -249,6 +249,14 @@ function createProject() {
       innerPopUpDiv.appendChild(modalInfoDiv);
       popUpParentDiv.appendChild(innerPopUpDiv);
       document.body.appendChild(popUpParentDiv);
+
+      seeProjectLive.addEventListener('click', () => {
+        window.open(project.liveDemo, '_blank');
+      });
+
+      seeProjectSource.addEventListener('click', () => {
+        window.open(project.sourceDemo, '_blank');
+      });
 
       closeDiv.addEventListener('click', () => {
         popUpParentDiv.style.display = 'none';
