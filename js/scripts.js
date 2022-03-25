@@ -99,34 +99,34 @@ const projects = [
 
   {
     id: 2,
-    featuredImage: 'images/mobile/portfolio2.svg',
-    name: 'Multi-Post Stories',
+    featuredImage: 'images/softdev.JPG',
+    name: 'SoftDev Square',
     frame: [
-      'CANOPY', '• Back End Dev', '• 2015',
+      'Collaboration', '• Back End Dev', '• 2022',
     ],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'A SoftDev is a collaboration platform.',
     technologies: [
       'HTML', 'CSS', 'Javascript',
     ],
-    year: 2015,
-    liveDemo: '#',
-    sourceDemo: '#',
+    year: 2022,
+    liveDemo: 'https://devsquareapp.herokuapp.com/',
+    sourceDemo: 'https://github.com/Emmy-github-webdev/meetup',
   },
 
   {
     id: 3,
-    featuredImage: 'images/mobile/portfolio3.svg',
-    name: 'Tonic',
+    featuredImage: 'images/tronicshop.JPG',
+    name: 'TronicShop',
     frame: [
-      'CANOPY', '• Back End Dev', '• 2015',
+      'eCommerce', '• Back End Dev', '• 2022',
     ],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Tronicshop is an eCommerce application built for the sales of electronic.',
     technologies: [
       'HTML', 'CSS', 'Javascript',
     ],
-    year: 2015,
-    liveDemo: '#',
-    sourceDemo: '#',
+    year: 2022,
+    liveDemo: 'https://tronicshopapp.herokuapp.com/',
+    sourceDemo: 'https://github.com/Emmy-github-webdev/tronicshop',
   },
 
   {
