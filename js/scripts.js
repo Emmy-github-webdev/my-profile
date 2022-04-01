@@ -99,7 +99,7 @@ const projects = [
 
   {
     id: 2,
-    featuredImage: 'images/dev.PNG',
+    featuredImage: 'images/softdev.png',
     name: 'SoftDev Square',
     frame: [
       'Collaboration', '• Back End Dev', '• 2022',
@@ -115,7 +115,7 @@ const projects = [
 
   {
     id: 3,
-    featuredImage: 'images/tronic.PNG',
+    featuredImage: 'images/tronicshop.png',
     name: 'TronicShop',
     frame: [
       'eCommerce', '• Back End Dev', '• 2022',
